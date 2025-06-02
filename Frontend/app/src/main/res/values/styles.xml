@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="YellowDatePickerDialog" parent="Theme.MaterialComponents.DayNight.Dialog">
+        <item name="colorPrimary">@android:color/holo_orange_light</item>
+        <item name="colorPrimaryVariant">@android:color/holo_orange_dark</item>
+        <item name="colorAccent">@android:color/holo_orange_light</item>
+        <!-- Make the OK and Cancel buttons black -->
+        <item name="buttonBarPositiveButtonStyle">@color/black</item>
+        <item name="buttonBarNegativeButtonStyle">@color/black</item>
+    </style>
+</resources>

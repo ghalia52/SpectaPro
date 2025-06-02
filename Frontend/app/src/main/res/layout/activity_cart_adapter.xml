@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="8dp"
+    app:cardBackgroundColor="#F8F9FA"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="2dp">
+
+  <androidx.constraintlayout.widget.ConstraintLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="16dp">
+
+    <!-- Ticket icon -->
+    <ImageView
+        android:id="@+id/ticketIconImageView"
+        android:layout_width="67dp"
+        android:layout_height="64dp"
+        android:contentDescription="Icône de billet"
+        android:padding="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="#FF9500" />
+
+    <!-- Show name - NEW ELEMENT -->
+    <TextView
+        android:id="@+id/showNameTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="#212529"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/removeItemButton"
+        app:layout_constraintStart_toEndOf="@+id/ticketIconImageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Ticket information section -->
+    <TextView
+        android:id="@+id/ticketTypeTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif"
+        android:textColor="#212529"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/showNameTextView"
+        app:layout_constraintStart_toStartOf="@+id/showNameTextView"
+        app:layout_constraintTop_toBottomOf="@+id/showNameTextView" />
+
+    <TextView
+        android:id="@+id/ticketDescriptionTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="#6C757D"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/ticketTypeTextView"
+        app:layout_constraintStart_toStartOf="@+id/ticketTypeTextView"
+        app:layout_constraintTop_toBottomOf="@+id/ticketTypeTextView" />
+
+    <!-- Price section -->
+    <TextView
+        android:id="@+id/ticketPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:textColor="#FF9500"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/removeItemButton"
+        app:layout_constraintTop_toTopOf="@+id/ticketTypeTextView" />
+
+    <!-- Delete button -->
+    <ImageButton
+        android:id="@+id/removeItemButton"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Supprimer l'article"
+        android:src="@drawable/car_ui_icon_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:tint="@android:color/holo_red_dark" />
+
+    <!-- Quantity controls -->
+    <LinearLayout
+        android:id="@+id/quantityLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ticketPriceTextView">
+
+      <ImageButton
+          android:id="@+id/decreaseButton"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:contentDescription="Diminuer la quantité"
+          android:src="@drawable/car_ui_recyclerview_ic_down"
+          app:tint="#6C757D" />
+
+      <TextView
+          android:id="@+id/quantityTextView"
+          android:layout_width="40dp"
+          android:layout_height="wrap_content"
+          android:gravity="center"
+          android:textColor="#212529"
+          android:textSize="16sp"
+          android:textStyle="bold" />
+
+      <ImageButton
+          android:id="@+id/increaseButton"
+          android:layout_width="24dp"
+          android:layout_height="24dp"
+          android:background="?attr/selectableItemBackgroundBorderless"
+          android:contentDescription="Augmenter la quantité"
+          android:src="@drawable/car_ui_recyclerview_ic_up_private"
+          app:tint="#6C757D" />
+    </LinearLayout>
+  </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
