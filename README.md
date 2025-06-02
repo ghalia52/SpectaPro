@@ -23,6 +23,3 @@ SpectaPro is a full-stack Android application for discovering, filtering, and bo
 - REST APIs for client, reservation, spectacle, and billet handling
 - Email service using JavaMailSender
 - MySQL / H2 (for local development)
-
-## 📂 Project Structure
-
