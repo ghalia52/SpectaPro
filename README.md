@@ -1,8 +1,8 @@
-# 🎭 SpectaPro
+# SpectaPro
 
 SpectaPro is a full-stack Android application for discovering, filtering, and booking event tickets. It offers real-time availability tracking, location-based filtering, shopping cart features, and email confirmation of reservations.
 
-## ✨ Features
+## Features
 
 - 🔍 **Search & Filter** events by date, location, or name
 - 🗺️ **Map integration** to visualize event venues
@@ -11,7 +11,7 @@ SpectaPro is a full-stack Android application for discovering, filtering, and bo
 - 📸 **Event Previews** with images and links
 - 👤 **User Authentication** (Login / Register)
 
-## 📱 Tech Stack
+## Tech Stack
 
 ### Frontend
 - Java (Android Studio)
